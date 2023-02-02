@@ -1,0 +1,55 @@
+
+.score-board {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .players {
+    display: flex;
+    flex-direction: column;
+    min-width: 50px;
+
+    @include md {
+      min-width: 120px;
+    }
+
+    &__name {
+      color: #c7c7c7;
+      margin-bottom: 4px;
+      border-bottom: 2px solid #c7c7c7;
+      line-height: 1.4;
+      font-size: 18px;
+
+      @include xsm {
+        font-size: 25px;
+      }
+
+      @include sm {
+        font-size: 25px;
+      }
+
+      @include md {
+        font-size: 35px;
+      }
+
+    }
+
+    &__score {
+      color: #c7c7c7;
+      font-size: 18px;
+
+      @include xsm {
+        font-size: 25px;
+      }
+
+      @include sm {
+        font-size: 25px;
+      }
+
+      @include md {
+        font-size: 35px;
+      }
+
+    }
+  }
+}

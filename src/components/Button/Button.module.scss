@@ -1,0 +1,36 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-width: 200px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d56316;
+    color: #c7c7c7;
+    transition: color 0.3s ease-in-out,
+        border 0.3s ease-in-out;
+    font-family: sans-serif;
+    cursor: pointer;
+
+    &:hover {
+        color: #333;
+        background-color: #c7c7c7;
+    }
+
+    @include sm {
+        max-width: 345px;
+        height: 56px;
+        font-size: 16px;
+        padding: 16px 14px;
+    }
+
+    @include lg {
+        min-width: 250px;
+    }
+}

@@ -1,0 +1,88 @@
+/************************************************************
+
+    Sass mixins
+
+*************************************************************/
+
+/* CSS breakpoints
+*************************************/
+
+// XXSmall smartphones
+$screen-xxsm-min: 320px; //320px
+
+// XSmall tablets and smartphones
+$screen-xsm-min: 375px; //375px
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 568px; //576px
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// XXLarge desktops
+$screen-xxl-min: 1400px;
+
+// XXXLarge (1600+ desktop screens)
+$screen-xxxl-min: 1600px;
+
+// XXSmall devices
+@mixin xxsm {
+    @media (min-width: #{$screen-xxsm-min}) {
+        @content;
+    }
+}
+
+// XSmall devices
+@mixin xsm {
+    @media (min-width: #{$screen-xsm-min}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large tablets
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+// Extra large desktops
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+}
+
+// Mostly used for 1600+ desktop screens
+@mixin xxxl {
+    @media (min-width: #{$screen-xxxl-min}) {
+        @content;
+    }
+}
