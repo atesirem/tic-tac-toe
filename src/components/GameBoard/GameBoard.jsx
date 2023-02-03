@@ -6,6 +6,7 @@ import Board from "tictactoe-board";
 import Button from "../Button/Button";
 
 import styles from "./GameBoard.module.scss";
+import audioSrc from "../../assets/audio/retro-game-click-sound.mp3"
 
 export default function GameBoard(props) {
   const [gameBoard, setGameBoard] = useState(new Board());
@@ -13,7 +14,7 @@ export default function GameBoard(props) {
   const [isMoving, setIsMoving] = useState(false);
 
   const minimax = new Minimax("X", "O");
-  const audio = new Audio("/src/assets/audio/retro-game-click-sound.mp3");
+  const audio = new Audio(audioSrc);
 
   useEffect(() => {
     setCurrentPLayer(gameBoard.currentMark());
